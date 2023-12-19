@@ -4,3 +4,50 @@ body {
   color: #ccc;
   font-size: 16px;
 }
+
+.docs-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.flex-container {
+  display: flex;
+  margin-top: 20px;
+}
+
+.steps-container {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.code-container {
+  flex: 1;
+}
+
+.step {
+  background: #1a1a1a; /* Dark background for the step section */
+  padding: 15px;
+  margin-bottom: 10px;
+  border-left: 4px solid #4fd1c5; /* Tailwind CSS brand color for example */
+}
+
+.code-block {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.code-block button {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  padding: 5px 10px;
+  background: #333;
+  color: #ccc;
+  border: none;
+  cursor: pointer;
+}
+
+/* Add additional styles for SyntaxHighlighter here */
