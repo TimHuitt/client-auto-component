@@ -88,10 +88,12 @@ const Docs = () => {
                     </section>
                 </div>
                 <div className="code-container">
-                    
+                <img
+                    src="../../../assets/step6.gif"
+                    alt="gif" style={{maxWidth: '100%', height: 'auto'}} />
                 </div>
             </div>
-
+            
             
             <div className="flex-container">
                 <div className="steps-container">
@@ -101,9 +103,12 @@ const Docs = () => {
                     </section>
                 </div>
                 <div className="code-container">
-                    
+                <img
+                    src="../../../assets/step7.gif"
+                    alt="gif" style={{maxWidth: '100%', height: 'auto'}} />
                 </div>
             </div>
+
             <div className="flex-container">
                 <div className="steps-container">
                     <section className="step">
