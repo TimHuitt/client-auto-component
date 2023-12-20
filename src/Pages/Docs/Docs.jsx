@@ -31,7 +31,7 @@ const Docs = () => {
                 <div className="code-container">
                     <CodeBlock code={devImport} />
                     <img
-                    src="../../../assets/step2.png"
+                    src="step2.png"
                     alt="step2" style={{maxWidth: '100%', height: 'auto'}} />
                 </div>
             </div>
@@ -45,7 +45,7 @@ const Docs = () => {
                 <div className="code-container">
                     <CodeBlock code={addComponent} />
                     <img
-                    src="../../../assets/step3.png"
+                    src="step3.png"
                     alt="step3" style={{maxWidth: '100%', height: 'auto'}} />
                 </div>
             </div>
@@ -58,7 +58,7 @@ const Docs = () => {
                 </div>
                 <div className="code-container" style={{display: 'flex'}}>
                     <img
-                    src="../../../assets/step4.png"
+                    src="step4.png"
                     alt="gif" style={{maxWidth: '100%', height: 'auto'}} />
                 </div>
             </div>
@@ -75,7 +75,7 @@ const Docs = () => {
                 </div>
                 <div className="code-container" style={{display: 'flex'}}>
                     <img
-                    src="../../../assets/step5.gif"
+                    src="step5.gif"
                     alt="gif" style={{maxWidth: '100%', height: 'auto'}} />
                 </div>
             </div>
@@ -89,7 +89,7 @@ const Docs = () => {
                 </div>
                 <div className="code-container">
                 <img
-                    src="../../../assets/step6.gif"
+                    src="step6.gif"
                     alt="gif" style={{maxWidth: '100%', height: 'auto'}} />
                 </div>
             </div>
@@ -104,7 +104,7 @@ const Docs = () => {
                 </div>
                 <div className="code-container">
                 <img
-                    src="../../../assets/step7.gif"
+                    src="step7.gif"
                     alt="gif" style={{maxWidth: '100%', height: 'auto'}} />
                 </div>
             </div>
