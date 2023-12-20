@@ -30,6 +30,9 @@ const Docs = () => {
                 </div>
                 <div className="code-container">
                     <CodeBlock code={devImport} />
+                    <img
+                    src="../../../assets/step2.png"
+                    alt="step2" style={{maxWidth: '100%', height: 'auto'}} />
                 </div>
             </div>
             <div className="flex-container">
@@ -41,6 +44,9 @@ const Docs = () => {
                 </div>
                 <div className="code-container">
                     <CodeBlock code={addComponent} />
+                    <img
+                    src="../../../assets/step3.png"
+                    alt="step3" style={{maxWidth: '100%', height: 'auto'}} />
                 </div>
             </div>
             <div className="flex-container">

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-import { dark } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import { nord } from 'react-syntax-highlighter/dist/esm/styles/prism';
 const CodeBlock = ({ code }) => {
     const copyToClipboard = (code) => {
         navigator.clipboard.writeText(code);
@@ -10,7 +10,7 @@ const CodeBlock = ({ code }) => {
     return (
         <div className="code-block">
             <button onClick={() => copyToClipboard(code)}>Copy</button>
-            <SyntaxHighlighter language="javascript" style={dark}>
+            <SyntaxHighlighter language="javascript" style={nord}>
                 {code.trim()}
             </SyntaxHighlighter>
         </div>
