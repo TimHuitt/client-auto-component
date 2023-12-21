@@ -1,21 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-import { useNavigate } from 'react-router';
-import { userLogin } from '../../utilities/component-service'; // Adjust the path based on your project structure
+import axios from 'axios';
 
 const LoginGoogle = () => {
-  const navigate = useNavigate();
 
-  const handleLogin = async () => {
-    try {
-      const data = await userLogin();
-
-      navigate('/user');
-      console.log(data)
-
-      } catch (err) {
-      console.error(err.message);
-    }
+  const handleLogin = () => {
+    // Redirect to the backend route that initiates the Google OAuth flow
+    window.location.href = 'http://localhost:4000/auth/google';
   };
 
   return (
