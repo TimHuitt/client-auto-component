@@ -1,7 +1,7 @@
 import React from 'react';
 import CodeBlock from '../../Components/CodeBlock/CodeBlock';
 import { devInstall, devImport, addComponent } from './codeSnippets';
-
+import './Docs.css'
 
 const Docs = () => {
     return (

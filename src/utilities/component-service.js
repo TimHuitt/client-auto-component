@@ -8,3 +8,10 @@ export const userLogin = async () => {
     console.log(err.message)
   }
 }
+export const userLogout = async () => {
+  try {
+     await componentAPI.logout()
+  } catch (err) {
+    console.log(err.message)
+  }
+}
