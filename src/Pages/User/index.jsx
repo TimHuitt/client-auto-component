@@ -1,6 +1,6 @@
 import React, { useEffect, useContext } from 'react';
 import { useLocation } from 'react-router-dom';
-import UserContext from '../../contexts/UserContext'; // Adjust the import path as necessary
+import UserContext from '../../contexts/UserContext';
 import './User.css';
 
 const User = () => {
@@ -16,9 +16,15 @@ const User = () => {
       setUserData(parsedUserData);
       localStorage.setItem('userData', JSON.stringify(parsedUserData));
     }
-  }, [location, setUserData]); // Add setUserData to the dependency array
+  }, [location, setUserData]);
 
-  // ... rest of your component
+  const copyToClipboard = () => {
+    if (userData && userData.googleId) {
+      navigator.clipboard.writeText(userData.googleId)
+        // .then(() => alert("Google ID copied to clipboard!"))
+        .catch(err => console.error("Failed to copy Google ID: ", err));
+    }
+  };
 
   return (
     <div>
@@ -28,6 +34,8 @@ const User = () => {
           <p>Welcome, {userData.name}!</p>
           <p>Email: {userData.email}</p>
           <img src={userData.avatar} alt="User Avatar" id="user-avatar" />
+          {/* Add a button to copy the Google ID */}
+          <button onClick={copyToClipboard}>Copy Google ID</button>
           {/* Render other user-related content here */}
         </div>
       )}
