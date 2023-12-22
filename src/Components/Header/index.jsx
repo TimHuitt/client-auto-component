@@ -1,21 +1,12 @@
 import { Link } from 'react-router-dom';
-import { useState, useEffect, useContext } from 'react';
-import UserContext from '../../contexts/UserContext';
+import { useState } from 'react';
 import './Header.css';
-import LoginGoogle from './LoginGoogle';
-import LogoutGoogle from './LogoutGoogle';
 
 export default function Header() {
   const [isMenuOpen, setMenuOpen] = useState(false);
-  const { userData } = useContext(UserContext);
-  console.log(userData); 
   
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
-  };
-
-  const closeMenu = () => {
-    setMenuOpen(false);
   };
 
   return (
@@ -33,12 +24,6 @@ export default function Header() {
           <Link to="https://www.npmjs.com/package/auto-component" target="_blank" rel="noopener noreferrer">
             npm
           </Link>
-          {userData && (
-            <img src={userData.avatar} alt="User Avatar" id="user-avatar" />
-          )}
-          {isMenuOpen && (
-            <div className="overlay" onClick={closeMenu}></div>
-          )}
         </div>
       </header>
     </div>

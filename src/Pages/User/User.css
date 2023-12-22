@@ -1,8 +1,0 @@
-#user-avatar {
-    width: 40px; /* Set the width as needed */
-    height: 40px; /* Set the height as needed */
-    border-radius: 50%; /* Circular avatar */
-    object-fit: cover; /* Ensure the image covers the area without distortion */
-    border: 2px solid #858585; /* Optional: Adds a white border around the avatar */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Adds a slight shadow for depth */
-  }

@@ -1,4 +1,3 @@
-import React from 'react';
 import CodeBlock from '../../Components/CodeBlock/CodeBlock';
 import { devInstall, devImport, addComponent } from './codeSnippets';
 import './Docs.css'
@@ -13,16 +12,13 @@ const Docs = () => {
                         <h2>1. Install auto-component</h2>
                         <p>Install `auto-component` from npm as a developer dependency within your project directory.</p>
                     </section>
-
                 </div>
                 <div className="code-container">
-
                     <CodeBlock code={devInstall} />
                 </div>
             </div>
             <div className="flex-container">
                 <div className="steps-container">
-
                     <section className="step">
                         <h2>2. Import AutoComponent</h2>
                         <p>Import inside the file where you're building the new component.</p>
@@ -62,15 +58,14 @@ const Docs = () => {
                     alt="gif" style={{maxWidth: '100%', height: 'auto'}} />
                 </div>
             </div>
-
             <div className="flex-container">
                 <div className="steps-container" style={{display: 'flex'}}>
                     <section className="step">
-                    <h2>5. Start building</h2>
-                    <p>Tell auto-component what you want, and click "Generate." The result
-                        will be rendered on the page. You can click the "Request" or "Response"
-                        tabs underneath the input to see what is being sent to the AI, and what
-                        was returned.</p>
+                        <h2>5. Start building</h2>
+                        <p>Tell auto-component what you want, and click "Generate." The result
+                            will be rendered on the page. You can click the "Request" or "Response"
+                            tabs underneath the input to see what is being sent to the AI, and what
+                            was returned.</p>
                     </section>
                 </div>
                 <div className="code-container" style={{display: 'flex'}}>
@@ -78,8 +73,7 @@ const Docs = () => {
                     src="step5.gif"
                     alt="gif" style={{maxWidth: '100%', height: 'auto'}} />
                 </div>
-            </div>
-                        
+            </div>  
             <div className="flex-container">
                 <div className="steps-container">
                     <section className="step">
@@ -88,13 +82,11 @@ const Docs = () => {
                     </section>
                 </div>
                 <div className="code-container">
-                <img
-                    src="step6.gif"
-                    alt="gif" style={{maxWidth: '100%', height: 'auto'}} />
+                    <img
+                        src="step6.gif"
+                        alt="gif" style={{maxWidth: '100%', height: 'auto'}} />
                 </div>
             </div>
-            
-            
             <div className="flex-container">
                 <div className="steps-container">
                     <section className="step">
@@ -103,12 +95,11 @@ const Docs = () => {
                     </section>
                 </div>
                 <div className="code-container">
-                <img
-                    src="step7.gif"
-                    alt="gif" style={{maxWidth: '100%', height: 'auto'}} />
+                    <img
+                        src="step7.gif"
+                        alt="gif" style={{maxWidth: '100%', height: 'auto'}} />
                 </div>
             </div>
-
             <div className="flex-container">
                 <div className="steps-container">
                     <section className="step">
@@ -116,9 +107,7 @@ const Docs = () => {
                         <p>Click the red X button to start a new session.</p>
                     </section>
                 </div>
-                <div className="code-container">
-                    
-                </div>
+                <div className="code-container" />
             </div>
         </div>
     );
