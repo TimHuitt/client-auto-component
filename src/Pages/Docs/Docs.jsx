@@ -1,10 +1,33 @@
+import { useState } from 'react'
 import CodeBlock from '../../Components/CodeBlock/CodeBlock';
 import { devInstall, devImport, addComponent } from './codeSnippets';
+import AutoComponent from 'auto-component'
 import './Docs.css'
 
+
+
 const Docs = () => {
+    const [ showComponent, setShowComponent ] = useState(false)
+
+    const handleAdd = () => {
+        setShowComponent(!showComponent)
+    }
+
     return (
         <div className="docs-container">
+            <div id='preview-container'>
+                <div 
+                    className={showComponent 
+                        ? 'preview-button red' 
+                        : 'preview-button green'} 
+                    onClick={handleAdd}> 
+                        { showComponent 
+                            ? 'Remove'
+                            : 'Click to add auto-component here'
+                        }
+                </div>
+                {showComponent ? <AutoComponent /> : ''}
+            </div>
             <h1>Documentation</h1>
             <div className="flex-container">
                 <div className="steps-container">
