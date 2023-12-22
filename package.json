@@ -11,7 +11,7 @@
     "proxy": "http://localhost:4000"
   },
   "dependencies": {
-    "auto-component": "^1.0.0",
+    "auto-component": "^1.0.1",
     "axios": "^1.6.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

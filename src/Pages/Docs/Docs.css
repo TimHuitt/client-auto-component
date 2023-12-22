@@ -2,12 +2,18 @@
 .docs-container {
   display: flex;
   flex-direction: column;
-  max-width: 1200px;
+  width: 100%;
   margin-top: 80px;
 }
 .flex-container {
   display: flex;
+  flex-direction: row;
   margin-top: 20px;
+}
+@media (max-width: 850px) {
+  .flex-container {
+    flex-direction: column;
+  }
 }
 .steps-container {
   display: flex;
@@ -23,7 +29,7 @@
 }
 
 .step {
-  width: 100%;
+  max-width: 100%;
   background: #1a1a1a; /* Dark background for the step section */
   padding: 15px;
   margin-bottom: 10px;
@@ -31,6 +37,7 @@
 }
 
 .code-block {
+  max-width: 100%;
   position: relative;
   margin-bottom: 10px;
 }
@@ -56,7 +63,7 @@
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  width: 300px;
+  width: 325px;
   padding: 5px 10px;
   font-size: 1.2rem;
   text-align: center;
