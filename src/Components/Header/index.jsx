@@ -33,19 +33,8 @@ export default function Header() {
           <Link to="https://www.npmjs.com/package/auto-component" target="_blank" rel="noopener noreferrer">
             npm
           </Link>
-
           {userData && (
             <img src={userData.avatar} alt="User Avatar" id="user-avatar" />
-          )}
-
-          {isMenuOpen && (
-            <div id="menu-dropdown">
-              <Link to="/user">
-                My Components
-              </Link>
-              <LoginGoogle />
-              <LogoutGoogle />
-            </div>
           )}
           {isMenuOpen && (
             <div className="overlay" onClick={closeMenu}></div>
