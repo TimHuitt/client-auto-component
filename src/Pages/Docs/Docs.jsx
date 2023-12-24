@@ -28,7 +28,9 @@ const Docs = () => {
                 </div>
                 {showComponent ? <AutoComponent /> : ''}
             </div>
-            <h1>Documentation</h1>
+            <h2>Video Demo</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/SYhRGkiXS_M?si=-ZiO7hR_qwCCSgoI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <h2>Installation Steps</h2>
             <div className="flex-container">
                 <div className="steps-container">
                     <section className="step">
